@@ -1,0 +1,185 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-kodigo-block {
+	background-color: var(--wp-admin-theme-color);
+	color: #fff;
+	padding: 2px;
+}
+
+/* Annotation style */
+// .container {
+//     max-width: 1140px;
+//     margin: auto;
+//     padding: 0 350px;
+// }
+
+.kodigo-enabled-content {
+
+    .kodigo-markup {
+        display: inline-block;
+        cursor: pointer;
+        color: var(--kodigo_markup_color);
+        //border-bottom: solid 1px var(--kodigo_markup_color);
+
+        .kodigo-markup--icon {
+
+            position: relative;
+            top: 0.2em; 
+            padding-right: 0.25em;
+            padding-left: 0.25em;
+
+            svg {
+                width: auto !important;
+                height: 0.9em !important;
+                fill: var(--kodigo_markup_icon_color);
+            }
+        }
+        
+    }
+    .kodigo-tooltip--object-icon {
+        position: relative;
+        display: inline;
+    }
+    
+    .kodigo-tooltip--object-icon img {
+        width: 13px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 3px; 
+        display: inline !important;
+    }
+
+    
+
+    .kodigo-tooltip {
+
+        min-width: 100%;
+
+        @media ( min-width: 500px ) {
+            
+        }
+
+        @media ( min-width: 768px ) {
+            min-width: 500px;
+        }
+
+        @media ( min-width: 900px ) {
+            max-width: 30%;
+        }
+
+        @media ( min-width: 1024px ) {
+
+        }
+
+        
+        background-color: var(--kodigo_tooltip_background_color);
+        opacity: 0;
+        //display: none;
+        transition: opacity 0.5s ease;
+
+        &[data-show] {
+            //display: block;
+            opacity: 1;
+        }
+
+        .kodigo-tooltip--arrow {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid var(--kodigo_tooltip_background_color);
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .15s;
+            transform-origin: top;
+            opacity: 1;
+            visibility: visible;
+            left: 50%;
+        }
+
+        &[data-popper-placement="top"] {
+            .kodigo-tooltip--arrow {
+                transform: rotateX(180deg) translateX(-50%);
+                bottom: -30px;
+            }
+        }
+
+        &[data-popper-placement="bottom"] {
+            .kodigo-tooltip--arrow {
+                transform: rotateX(0deg) translateX(-50%);
+                top: -15px;
+            }
+        }
+    }
+
+    .kodigo-tooltip--wrapper {
+        position: relative;
+
+        .kodigo-tooltip--close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 5;
+        }
+
+        .kodigo-tooltip--icon-cont img {
+            width: 10px;
+            height: auto;
+        }
+
+        .kodigo-tooltip--main-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .kodigo-tooltip--content {
+            position: relative;
+            padding: 30px 40px;
+            .kodigo-tooltip--icon-cont {
+                position: absolute;
+                top: 35px;
+                left: 20px;
+                z-index: 6;
+            }
+            .kodigo-tooltip--text {
+                max-height: 180px;
+                overflow-y: scroll;
+                
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 5px var(--kodigo_markup_color);
+                    border-radius: 10px;
+                }
+                  
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 5px;
+                    background-color: var(--kodigo_tooltip_font_color);;
+                }
+
+                &::-webkit-scrollbar-thumb:vertical{
+                    height: 20px!important;
+                    width: 20px;
+                }
+            }
+            .kodigo-tooltip--text * {
+                font-size: inherit !important;
+                margin-top: 0;
+                color: var(--kodigo_tooltip_font_color);
+            }
+        }
+    }
+} 
+
+#kodigo-tooltips-container {
+    height: 0;
+    overflow: hidden;
+}

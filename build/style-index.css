@@ -1,0 +1,140 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-kodigo-block {
+  background-color: var(--wp-admin-theme-color);
+  color: #fff;
+  padding: 2px;
+}
+
+/* Annotation style */
+.kodigo-enabled-content .kodigo-markup {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--kodigo_markup_color);
+}
+.kodigo-enabled-content .kodigo-markup .kodigo-markup--icon {
+  position: relative;
+  top: 0.2em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+}
+.kodigo-enabled-content .kodigo-markup .kodigo-markup--icon svg {
+  width: auto !important;
+  height: 0.9em !important;
+  fill: var(--kodigo_markup_icon_color);
+}
+.kodigo-enabled-content .kodigo-tooltip--object-icon {
+  position: relative;
+  display: inline;
+}
+.kodigo-enabled-content .kodigo-tooltip--object-icon img {
+  width: 13px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 3px;
+  display: inline !important;
+}
+.kodigo-enabled-content .kodigo-tooltip {
+  min-width: 100%;
+  background-color: var(--kodigo_tooltip_background_color);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+@media (min-width: 768px) {
+  .kodigo-enabled-content .kodigo-tooltip {
+    min-width: 500px;
+  }
+}
+@media (min-width: 900px) {
+  .kodigo-enabled-content .kodigo-tooltip {
+    max-width: 30%;
+  }
+}
+.kodigo-enabled-content .kodigo-tooltip[data-show] {
+  opacity: 1;
+}
+.kodigo-enabled-content .kodigo-tooltip .kodigo-tooltip--arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--kodigo_tooltip_background_color);
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s;
+  transform-origin: top;
+  opacity: 1;
+  visibility: visible;
+  left: 50%;
+}
+.kodigo-enabled-content .kodigo-tooltip[data-popper-placement=top] .kodigo-tooltip--arrow {
+  transform: rotateX(180deg) translateX(-50%);
+  bottom: -30px;
+}
+.kodigo-enabled-content .kodigo-tooltip[data-popper-placement=bottom] .kodigo-tooltip--arrow {
+  transform: rotateX(0deg) translateX(-50%);
+  top: -15px;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper {
+  position: relative;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--icon-cont img {
+  width: 10px;
+  height: auto;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--main-image {
+  width: 100%;
+  height: auto;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content {
+  position: relative;
+  padding: 30px 40px;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--icon-cont {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  z-index: 6;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text {
+  max-height: 180px;
+  overflow-y: scroll;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text::-webkit-scrollbar {
+  width: 5px;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px var(--kodigo_markup_color);
+  border-radius: 10px;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--kodigo_tooltip_font_color);
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text::-webkit-scrollbar-thumb:vertical {
+  height: 20px !important;
+  width: 20px;
+}
+.kodigo-enabled-content .kodigo-tooltip--wrapper .kodigo-tooltip--content .kodigo-tooltip--text * {
+  font-size: inherit !important;
+  margin-top: 0;
+  color: var(--kodigo_tooltip_font_color);
+}
+
+#kodigo-tooltips-container {
+  height: 0;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
