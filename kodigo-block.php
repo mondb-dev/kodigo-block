@@ -98,6 +98,7 @@ function create_block_kodigo_block_block_init() {
 			$kodigo_tooltip_background_color = isset( $markup_colors['kodigo_tooltip_background_color'] )? $markup_colors['kodigo_tooltip_background_color'] : 'red';
 			$kodigo_tooltip_font_color = isset( $markup_colors['kodigo_tooltip_font_color'] )? $markup_colors['kodigo_tooltip_font_color'] : 'white';
 			$kodigo_markup_icon_color = isset( $markup_colors['kodigo_markup_icon_color'] )? $markup_colors['kodigo_markup_icon_color'] : 'white';
+
 			echo "<style>
 					:root {
 						--kodigo_markup_color: {$kodigo_markup_color};
@@ -149,7 +150,8 @@ add_action('wp_enqueue_scripts', function() {
 		$post_id = $post->ID;
 		$kodigo_annotations = new KodigoAnnotations( $post_id );
 		
-		wp_register_script( 'kodigo-popper-js', plugins_url( '/node_modules/@popperjs/core/dist/umd/popper.min.js', __FILE__ ), array(), true, true );
+		//wp_register_script( 'kodigo-popper-js', plugins_url( '/node_modules/@popperjs/core/dist/umd/popper.min.js', __FILE__ ), array(), true, true );
+		wp_register_script( 'kodigo-popper-js', plugins_url( '/public/js/popper.min.js', __FILE__ ), array(), true, true );
 		wp_register_script( 'kodigo-annotation', plugins_url( '/public/js/kodigo.js', __FILE__ ),  array( 'kodigo-utils', 'kodigo-popper-js', 'jquery' ), uniqid(), true );
 		//wp_register_script( 'kodigo-annotation', plugins_url( '/public/js/kodigo-build.js', __FILE__ ),  array( 'kodigo-popper-js', 'jquery' ), uniqid(), true );
 		wp_localize_script( 'kodigo-annotation', 'kodigoData', 
