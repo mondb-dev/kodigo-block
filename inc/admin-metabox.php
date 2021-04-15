@@ -90,13 +90,8 @@ add_action( 'add_meta_boxes', function(){
             <div id="clear-kodigo-wrapper">
                  
             </div>
-
-            <script>
-                (function($){
-                })(jQuery);
-            </script>
              <?php
-        },
+        }
     );
     
     } );
