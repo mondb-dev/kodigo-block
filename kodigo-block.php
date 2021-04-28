@@ -1,9 +1,10 @@
 <?php
 /**
  * Plugin Name:     Kodigo Block
- * Description:     Example block written with ESNext standard and JSX support – build step required.
+ * Description:     Kodigo is a WordPress tool for space-making, annotating, and gentle footnoting. A way to integrate notes and relevant sources seamlessly into online articles to help better explain and connect important information on a single page.
+ * 
  * Version:         0.1.0
- * Author:          The WordPress Contributors
+ * Author:          https://and-a-half.ph/ & http://dthree.com.ph/
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:     kodigo-block

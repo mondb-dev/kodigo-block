@@ -1,5 +1,5 @@
 === Kodigo Block ===
-Contributors:      The WordPress Contributors
+Contributors:      https://and-a-half.ph/ & http://dthree.com.ph/
 Tags:              block
 Requires at least: 5.6.0
 Tested up to:      5.6.0
@@ -8,14 +8,11 @@ Requires PHP:      7.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Example block written with ESNext standard and JSX support – build step required.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+Kodigo is a WordPress tool for space-making, annotating, and gentle footnoting.
+A way to integrate notes and relevant sources seamlessly into online articles to help better explain and connect important information on a single page.
 
 == Installation ==
 
@@ -23,35 +20,20 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload the plugin files to the `/wp-content/plugins/kodigo-block` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+INSTALLATION INSTRUCTIONS
+1. Download the ZIP from Kodigo GitHub repository.
+2. Go to WordPress plugin page, and click the Add New button at the top.
+3. On the Add Plugins page, click Upload Plugin button at the top.
+4. Upload the downloaded ZIP file.
+5. Activate the Kodigo plugin.
 
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+USAGE INSTRUCTIONS
+1. Highlight the word you’d like to add annotation to, and choose Kodigo from the toolbar.
+2. Input the text and/or images, and click OK.
+3. Customize your annotations by changing the color options below the editor.
+4. Your kodigos are now live!
 
 == Changelog ==
 
 = 0.1.0 =
 * Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
